@@ -1,0 +1,71 @@
+*{ /*для всех*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    display: flex;
+}
+#overlay {
+    color:black;
+    font-size: 50px;
+    font-weight: 10px; /* толщина букв */
+    font-style: italic; /* наклон*/
+    position: fixed; /* Используем fixed для фиксации элемента на экране */
+    top: 10%; /* Располагаем элемент по вертикали на 50% от верха */
+    left: 50%; /* Располагаем элемент по горизонтали на 50% от левого края */
+    transform: translate(-50%, -50%); /* Сдвигаем элемент на 50% от его собственной ширины и высоты */
+    z-index: 100; /* Устанавливаем z-index для правильного отображения поверх других элементов */
+
+    
+    -webkit-text-stroke: 1px rgb(255, 255, 255); /*обводка*/
+    
+}
+.col{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.col h2 {
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+.col h2:hover{
+    background: rgba(0, 0, 0, 0.126);
+    cursor: pointer;/*указательный пальчик*/
+}
+/**/
+.col button{
+    outline: none;
+    border: none;/*рамка*/
+    background: transparent;/*удал фона*/
+    font-size: 23px;
+    color:white;
+    padding: 10px;
+    transition: background 0.3s;
+    border-radius: 15px;
+}
+
+.col button:hover{
+    background: rgba(0, 0, 0, 0.126);
+    cursor: pointer;/*указательный пальчик*/
+}
+
+
+
+
+
+
+
+
+
+
+
